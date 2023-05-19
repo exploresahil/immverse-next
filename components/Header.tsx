@@ -7,6 +7,8 @@ import { BsApple, BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { FaGooglePlay } from "react-icons/fa";
 import { FiDownload } from "react-icons/fi";
 
+import logo from "@/public/assets/logos/Immverse-pixel-on-white_1.svg";
+
 type HeaderProps = {
   theme: string;
   setTheme: (theme: string) => void;
@@ -27,7 +29,7 @@ export default function Header({ theme, setTheme }: HeaderProps) {
           fill
           style={{ objectFit: "contain" }}
           alt="Immverse logo"
-          src="/assets/logos/Immverse-pixel-on-white_1.svg"
+          src={logo}
         />
       </div>
       <nav>

@@ -17,6 +17,9 @@ import MobileScreen1 from "@/public/assets/screens/splash-screen.png";
 import MobileScreen2 from "@/public/assets/screens/splash-screen.png";
 import MobileScreen3 from "@/public/assets/screens/login-screen.png";
 import MobileScreen4 from "@/public/assets/screens/login-screen.png";
+import googlePlay from "@/public/assets/logos/googlePlay.svg";
+import apple from "@/public/assets/logos/apple.svg";
+import team from "@/public/assets/images/team.jpg";
 
 const images = [
   MobileScreen1,
@@ -90,7 +93,7 @@ export default function Home() {
               fill
               style={{ objectFit: "contain" }}
               alt="Immverse logo"
-              src="/assets/screens/splash-screen.png"
+              src={MobileScreen1}
             />
           </div>
         </div>
@@ -121,7 +124,7 @@ export default function Home() {
                 fill
                 style={{ objectFit: "contain" }}
                 alt="Immverse logo"
-                src="/assets/logos/googlePlay.svg"
+                src={googlePlay}
               />
             </div>
             <div className="play-container">
@@ -129,7 +132,7 @@ export default function Home() {
                 fill
                 style={{ objectFit: "contain" }}
                 alt="Immverse logo"
-                src="/assets/logos/googlePlay.svg"
+                src={apple}
               />
             </div>
           </div>
@@ -140,7 +143,7 @@ export default function Home() {
               fill
               style={{ objectFit: "contain" }}
               alt="Immverse logo"
-              src="/assets/screens/login-screen.png"
+              src={MobileScreen3}
             />
           </div>
         </div>
@@ -189,7 +192,7 @@ export default function Home() {
                 fill
                 style={{ objectFit: "cover" }}
                 alt="Immverse logo"
-                src="/assets/images/team.jpg"
+                src={team}
               />
             </div>
           </div>
