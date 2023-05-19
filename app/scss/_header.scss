@@ -1,0 +1,30 @@
+@use "./veriables" as v;
+
+header {
+  width: 100vw;
+  height: 100px;
+
+  padding: 0 4vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo-container {
+    position: relative;
+    width: 100px;
+    height: 90px;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 1em;
+    }
+  }
+
+  .right {
+    display: flex;
+    gap: 1em;
+  }
+}

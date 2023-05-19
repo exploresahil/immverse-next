@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@font-face {
+  font-family: "immverse-font-bold";
+  src: url("./fonts/PPGoshaSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "immverse-font-regular";
+  src: url("./fonts/PPGoshaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$roboto: "Roboto", sans-serif;
+$fontR: "immverse-font-regular", sans-serif;
+$fontB: "immverse-font-bold", sans-serif;
+
+$light: rgb(237, 237, 237);
+$dark: rgb(15, 15, 15);
+$purple: #d71e8a;
+$gray: #757575;
+
+.theme-light {
+  transition: all 300ms ease-in-out;
+
+  $light: rgb(252, 252, 252);
+  $dark: rgb(15, 15, 15);
+  $purple: #d71e8a;
+  $gray: #757575;
+
+  background-color: $light;
+  color: $gray;
+
+  button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 100px;
+    background-color: $purple;
+    color: $light;
+
+    cursor: pointer;
+    display: flex;
+    gap: 0.5em;
+
+    &:hover {
+      background-color: $dark;
+    }
+  }
+
+  .theme-button {
+    background: none;
+
+    color: $dark;
+
+    font-size: 1rem;
+
+    &:hover {
+      background: none;
+      color: $purple;
+    }
+  }
+
+  form {
+    input {
+      border-bottom: 1px solid $gray;
+      color: $dark;
+
+      &:focus {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $gray;
+      }
+    }
+  }
+}
+
+.theme-dark {
+  transition: all 300ms ease-in-out;
+
+  $light: rgb(230, 230, 230);
+  $dark: rgb(15, 15, 15);
+  $purple: #d71e8a;
+  $gray: #8e8e8e;
+
+  background-color: $dark;
+  color: $gray;
+
+  button {
+    border: none;
+    padding: 5px 15px;
+    border-radius: 100px;
+    background-color: $purple;
+    color: $light;
+
+    cursor: pointer;
+    display: flex;
+    gap: 0.5em;
+
+    &:hover {
+      background-color: $gray;
+    }
+  }
+
+  .theme-button {
+    background: none;
+
+    color: $light;
+
+    font-size: 1rem;
+
+    &:hover {
+      background: none;
+      color: $purple;
+    }
+  }
+
+  form {
+    input {
+      border-bottom: 1px solid $gray;
+      color: $light;
+
+      &:focus {
+        border: none;
+        outline: none;
+        border-bottom: 1px solid $gray;
+      }
+    }
+  }
+}
+
+a {
+  color: $gray;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: $purple;
+  }
+}
