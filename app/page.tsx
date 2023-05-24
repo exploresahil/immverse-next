@@ -6,6 +6,7 @@ import { AiFillHeart, AiOutlineArrowDown } from "react-icons/ai";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Doughnut } from "react-chartjs-2";
+import { useCollapse } from 'react-collapsed'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -51,6 +52,10 @@ const responsive = {
 
 export default function Home() {
   const [show, setShow] = useState(false);
+  const [isExpanded, setExpanded] = useState(false)
+  const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded })
+
+  const [visible, setVisible] = useState(false)
 
   const data = {
     labels: ["Developers", "AI Enginears", "R&D"],
@@ -107,16 +112,33 @@ export default function Home() {
       <section id="about">
         <div className="text" data-aos="fade-right">
           <h1>Mission</h1>
+
           <p>We are on a mission to immortalize humans</p>
-          {show ? (
+          <div >
+
+            <section {...getCollapseProps()}>
+              Life is finite. Everyone has to die one day, and memories of our
+              loved ones would fade away over time. What if we could immortalize
+              our loved ones so that we can experience their presence around us
+              whenever we miss them.
+            </section>
+            <button
+              {...getToggleProps({
+                onClick: () => setExpanded((prevExpanded) => !prevExpanded),
+              })}
+            >
+              {isExpanded ? 'Show Less' : 'Show More'}
+            </button>
+          </div>
+          {/* {show ? (
             <p className="show-text">
               Life is finite. Everyone has to die one day, and memories of our
               loved ones would fade away over time. What if we could immortalize
               our loved ones so that we can experience their presence around us
               whenever we miss them.
             </p>
-          ) : null}
-          <button onClick={() => setShow(!show)}>Know More</button>
+          ) : null} */}
+          {/* <button onClick={() => setShow(!show)}>Know More</button> */}
           <div className="play-main">
             <div className="play-container">
               <Image
