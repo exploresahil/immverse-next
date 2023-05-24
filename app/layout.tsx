@@ -47,7 +47,7 @@ export default function RootLayout({
         {showPopup && (
           <div className="popup">
             <h2>
-              Click on the button to see <span>the future</span>
+              Click on the button to <span>time travel</span>
             </h2>
             <button onClick={handlePopupButtonClick}>Button</button>
           </div>

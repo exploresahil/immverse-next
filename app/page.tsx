@@ -53,7 +53,7 @@ export default function Home() {
   const [show, setShow] = useState(false);
 
   const data = {
-    labels: ["Developers", "AI Researchers", "Product Developers"],
+    labels: ["Developers", "AI Enginears", "R&D"],
     datasets: [
       {
         label: "My First Dataset",
@@ -110,11 +110,10 @@ export default function Home() {
           <p>We are on a mission to immortalize humans</p>
           {show ? (
             <p className="show-text">
-              The little minds behind aim an idea &quot;Immortalizing
-              humans&quot; . Life is finite. Everyone has to die one day, and
-              memories of our loved ones would fade away over time. What if we
-              could immortalize our loved ones so that we can experience their
-              presence around us whenever we miss them.
+              Life is finite. Everyone has to die one day, and memories of our
+              loved ones would fade away over time. What if we could immortalize
+              our loved ones so that we can experience their presence around us
+              whenever we miss them.
             </p>
           ) : null}
           <button onClick={() => setShow(!show)}>Know More</button>
@@ -205,7 +204,8 @@ export default function Home() {
         <div className="contact-main" data-aos="fade-up">
           <div className="form-container">
             <p>
-              <AiFillHeart /> Hello, Lets get in touch
+              <AiFillHeart className="heart" />
+              Hello, Lets get in touch
             </p>
             <form>
               <input placeholder=" Your name" aria-label="Full name" />
@@ -234,7 +234,7 @@ export default function Home() {
             <h4>
               We&apos;d love to Hear <span>from you</span>
             </h4>
-            <p>hello@immverse.ai</p>
+            <p>avatars@immverse.ai</p>
           </div>
         </div>
       </section>
