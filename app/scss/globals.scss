@@ -223,10 +223,14 @@
       flex-direction: column;
 
       p {
-        color: v.$purple;
+        color: v.$gray;
         font-size: 1.2rem;
 
         margin-bottom: 1em;
+      }
+
+      .heart {
+        color: v.$purple;
       }
 
       form {
@@ -239,7 +243,7 @@
           border: none;
           height: 40px;
           width: 350px;
-          padding: 0 10px;
+          //padding: 0 10px;
           border-bottom: 1px solid v.$gray;
 
           font-size: 1rem;
