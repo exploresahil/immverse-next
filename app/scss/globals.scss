@@ -103,6 +103,15 @@
     align-items: flex-end;
     gap: 1em;
 
+    div {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1em;
+      text-align: right;
+    }
+
     h1 {
       color: v.$purple;
       font-size: 4rem;
